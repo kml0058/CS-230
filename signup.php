@@ -28,10 +28,10 @@ require "includes/header.php"
                             <input type="text" class="email" name="email" placeholder="E-mail" required="required">
                         </div>
                         <div class="form-group">
-                            <input type="text" class="password" name="pwd" placeholder="Password" required="required">
+                            <input type="password" class="password" name="pwd" placeholder="Password" required="required">
                         </div>
                         <div class="form-group">
-                            <input type="text" class="password" name="con-pwd" placeholder="Confirm Password" required="required">
+                            <input type="password" class="password" name="con-pwd" placeholder="Confirm Password" required="required">
                         </div>
                         <div class="form-group">
                             <button type="submit" name="signup-submit" class="btn btn-success btn-lg btn-block">Register</button>                        </div>
