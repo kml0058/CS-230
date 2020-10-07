@@ -3,7 +3,7 @@
 if (isset($_POST['signup-submit'])) {
     require 'dbhandler.php';
 
-    $username = $_POST['uname]'];
+    $username = $_POST['uname'];
     $email = $POST['email'];
     $passw = $POST['pwd'];
     $pass_rep = $POST['con-pwd'];
@@ -43,6 +43,9 @@ if (isset($_POST['signup-submit'])) {
                     mysqli_stmt_bind_param($stmt, "sssss", $lname, $fname, $email, $username, $hashedPass);
                     mysqli_stmt_execute($stmt);
                     mysqli_stmt_store_result($stmt);
+
+                    $sqlImg = "INSERT INTO profile (uname) VALUE ('$username')";
+                    mysqli_query($conn, $sqlImg);
 
                     header("Location: ../signup.php?signup=success");
                     exit();
